@@ -1,0 +1,181 @@
+html,
+body {
+  height: 100%; /* 讓 html 和 body 的高度都延展到100%，佔滿整個螢幕 */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative; /* 明確地告訴按鈕，請相對於 body 來定位 */
+}
+.main-header {
+  background-color: rgba(255, 0, 0, 0.75); /* 75%不透明度+背景 */
+  -webkit-backdrop-filter: blur(10px); /* 針對 Safari 等 Webkit 核心的瀏覽器 */
+  backdrop-filter: blur(10px); /* 毛玻璃效果 */
+  padding: 15px 0; /* 上下留白，讓導覽列有高度 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 加個微微的下陰影 */
+  position: fixed; /* 固定定位 */
+  top: 0; /* 當它滾動到離螢幕頂部為 0 的位置時，就固定住 */
+  z-index: 1000; /* 確保導覽列永遠在最上層，不會被其他內容蓋住 */
+  width: 100%; /*寬度為100% */
+}
+.hero-image {
+  display: block; /* 把圖片從「行內」變成「區塊」，解決底部空隙問題 */
+  width: 100%; /* 確保圖片寬度為100% */
+  height: auto; /* 讓高度自動縮放，維持圖片比例 */
+}
+.header-content {
+  width: 90%; /* 內容寬度佔 90%，不是 100% */
+  max-width: 1200px; /* 最大寬度不超過 1200px，在大螢幕上更好看 */
+  margin: 0 auto; /* 這兩行讓內容在頁面中水平置中 */
+
+  display: flex; /* 啟用 Flexbox！ */
+  justify-content: space-between; /* 讓裡面的項目「兩端對齊」，標題就會靠左，選單會靠右 */
+  align-items: center; /* 讓標題和選單在垂直方向上對齊中間 */
+}
+.logo {
+  color: #ecf0f1; /* 淺灰色文字 */
+  font-size: 1.8rem; /* 稍大的字體 */
+  font-weight: bold; /* 粗體 */
+}
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* 移除清單預設的黑點 */
+  display: flex; /* 讓 li (選單項目) 變成水平排列 */
+}
+.main-nav li {
+  margin-left: 35px; /* 讓每個選單項目之間有間距 */
+}
+.main-nav a {
+  color: #ecf0f1; /* 淺灰色文字 */
+  text-decoration: none; /* 移除連結預設的底線 */
+  font-size: 1rem; /* 標準字體大小 */
+  transition: color 0.3s ease; /* 加上顏色變化的平滑過渡效果 */
+  font-family: "Noto Serif TC", serif; /* 字體為標楷體，並提供備用字體 */
+  font-weight: bold; /* 讓字體變粗 */
+  letter-spacing: 2px; /* 字元間距 */
+}
+.main-nav a:hover {
+  color: #000000; /* 滑鼠移上去的顏色 */
+}
+/*
+* {
+  font-size: 1.5rem;
+}
+  */
+
+.red-text,
+.red {
+  color: rgb(255, 0, 0);
+}
+.blue-text {
+  color: rgb(0, 0, 255);
+}
+.green-text {
+  color: rgb(55, 206, 156);
+}
+.yellow {
+  color: gold;
+}
+#pink {
+  color: darksalmon;
+}
+.ranbow-linear-graduent {
+  background: linear-gradient(
+    to right,
+    red orange yellow green blue indigo violet
+  );
+}
+.my-btn {
+  background-color: rgb(255, 0, 0); /* 背景 */
+  /*background-image: url(./03.jpg);*/
+  /*background-size: contain; */
+  /*background-repeat: no-repeat; */
+  /*background-position: center; */
+  text-align: center; /* 文字水平置中 */
+  vertical-align: middle; /* 文字垂直置中 */
+  /* padding: 10px; 內距 */
+  /* padding-top: 15px; */
+  /* padding: 15px 10px 5px 20px; 上 右 下 左 */
+  padding: 10px 20px; /* 上下 左右 */
+  /* margin: 10px;  外距 */
+  border-radius: 50%; /* 圓角 */
+  font-weight: 900; /* 字體粗細 */
+  width: 100px; /* 寬度 */
+  height: 100px; /* 高度 */
+  box-shadow: 1px 1px 1px 1px rgb(255, 255, 255); /* 陰影 */
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 30px; /* 字體大小 */
+  position: fixed; /* 絕對定位，讓元素脫離文檔流 */
+  bottom: 30px; /* 定位在離底部 30px 的地方 */
+  right: 30px; /* 讓元素的左側，對齊於頁面水平中間線 */
+
+  color: black; /* 原始文字顏色為黑色 */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.my-btn:hover {
+  background-color: #000000; /* 背景色 */
+  color: #ffffff; /* 文字色 */
+  box-shadow: 5px 5px 5px 5px rgba(192, 192, 192, 0.3); /* 滑入時陰影變明顯 */
+}
+.my-btn:active {
+  background-color: rgb(255, 0, 0); /* 背景恢復的顏色 */
+  color: black; /* 文字恢復的顏色 */
+  box-shadow: none; /* 移除陰影 */
+  transform: scale(0.95); /* 只保留縮小的效果 */
+}
+
+.message {
+  padding: 3px 6px;
+  border: dimgray solid 1px;
+  border-radius: 10px;
+  background-color: aquamarine;
+  color: #ecf0f1;
+  display: inline-block;
+  /* position: absolute;
+  position: relative; */
+  position: fixed;
+  top: 10px;
+  /* bottom: 10px; */
+  right: 10px;
+  transform: translate(10px);
+  transition: all 0.3s ease;
+}
+.message:after {
+  content: attr(data-count);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.5rem;
+  color: red;
+}
+.message:hover {
+  padding: 3px 20px;
+}
+.message.move {
+  right: 50%;
+  opacity: 0;
+  transform: translateX(50%);
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #42b426;
+  position: relative;
+}
+.box-center {
+  display: inline-block;
+  background-color: #fd345f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+}

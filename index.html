@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的履歷</title>
+    <style>
+      .fat {
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    </style>
+    <link rel="stylesheet" href="./ayu.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-content">
+        <div class="logo">Wang yulin</div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <img class="hero-image" src="./02.jpg" width="100%" height="auto" alt="" />
+    <main>
+      <a href="https://www.behance.net/4a7j2011de2b" target="_blank">link</a>
+      <a href="https://www.behance.net/4a7j2011de2b" target="_blank">
+        <img
+          src="./03.jpg"
+          width="100%"
+          height="750"
+          alt="作品集"
+          class="品牌"
+        />
+      </a>
+      <strong>
+        <h3>特長</h3>
+        <ul>
+          <li>設計/排版</li>
+          <li>音樂/鋼琴</li>
+        </ul>
+      </strong>
+      <strong>個人簡介</strong>
+      <p>
+        <span>姓名:</span>
+        <span>我是誰</span>
+      </p>
+      <p>我是誰</p>
+      <div class="education" id="education" style="color: rgb(91, 91, 91)">
+        <h3>學歷</h3>
+        <ul>
+          <li>南臺科技大學 <small>2018-2022</small></li>
+          <li>白水設計公司 <small>2022-2024</small></li>
+        </ul>
+      </div>
+      行事曆:
+      <table border="20" style="width: 100%">
+        <thead>
+          <tr>
+            <th></th>
+            <th>上午</th>
+            <th>中午</th>
+            <th>晚上</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>雞蛋</td>
+            <td>吐司</td>
+            <td>饅頭</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>結論</td>
+            <td colspan="3">廢物的一天</td>
+          </tr>
+        </tfoot>
+      </table>
+      <form action="">
+        <input type="text" placeholder="請輸入姓名" />
+        <input type="number" placeholder="請輸入年齡" />
+        <input type="date" placeholder="請輸入出生日期" />
+        <input type="text" placeholder="請輸入地址" />
+        <input type="email" placeholder="請輸入Email" />
+        <div>
+          <label><input type="radio" name="handsome" value="yes" />是</label>
+          <label><input type="radio" name="handsome" value="no" />否</label>
+        </div>
+        <div>
+          喜歡的水果
+          <label
+            ><input type="checkbox" name="fruit" value="apple" />蘋果</label
+          >
+          <label
+            ><input type="checkbox" name="fruit" value="guava" />芭樂</label
+          >
+          <label
+            ><input type="checkbox" name="fruit" value="mango" />芒果</label
+          >
+        </div>
+        <div class="blue">
+          <span class="blue-text">備註</span>
+          <textarea name="" id=""></textarea>
+        </div>
+        <div class="">
+          <span class="green-text">國家</span>
+          <select name="" id="">
+            <option value="TW">臺灣</option>
+            <option value="JP">日本</option>
+            <option value="US">美國</option>
+            <option value="CN">中國</option>
+          </select>
+        </div>
+        <button class="my-btn">TOP</button>
+
+        <span id="pink" class=""></span>
+        <span class="blue">
+          <span class="blue-text yellow">color text</span>
+        </span>
+      </form>
+      <div class="cercle">cercle</div>
+      <div
+        class="message"
+        data-count="10"
+        onclick="this.classList.toggle('move')"
+      >
+        message
+      </div>
+      <div class="box">
+        <div class="box-center">center</div>
+      </div>
+    </main>
+  </body>
+</html>
