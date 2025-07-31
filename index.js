@@ -111,4 +111,12 @@ const whichISBig = function (a, b) {
 };
 whichISBig(1, 2);
 
+// 成績判斷計算表
+// 95-100(是)return A+
+// 90~94(是)return A
+// 80~89(是)return B
+// 70~79(是)return C
+// 0~69(是)return D
+const checkScore = function (score) {};
+
 // 用迴圈做九九乘法表
