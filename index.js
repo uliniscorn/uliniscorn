@@ -117,6 +117,44 @@ whichISBig(1, 2);
 // 80~89(是)return B
 // 70~79(是)return C
 // 0~69(是)return D
-const checkScore = function (score) {};
+const checkscore = function (score) {
+  if (typeof score !== "number" || score < 0 || score > 100) {
+    return "輸入錯誤,請提供0到100之間的數字分數";
+  }
+  if (score >= 95) {
+    return "A+";
+  } else if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else if (score >= 70) {
+    return "C";
+  } else {
+    return "D";
+  }
+};
+console.log(checkscore(97));
+console.log(checkscore(80));
+console.log(checkscore(59));
 
 // 用迴圈做九九乘法表
+for (let i = 1; i <= 9; i++) {
+  for (let j = 1; j <= 9; j++) {
+    console.log(`${i}*${j}=${i * j}`);
+  }
+}
+
+console.log("Hello world".length);
+console.log("Hello world".substring(0, 3));
+console.log("Hello world".toUpperCase());
+console.log("hello world");
+
+console.log(
+  word.substring(0, 1).toUpperCase() + //H
+    word.substring(1, word.length) //ello world
+);
+
+
+// reduce
+let sum =0
+for(let i )
